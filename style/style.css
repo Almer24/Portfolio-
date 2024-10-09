@@ -1,0 +1,393 @@
+  body {
+  background-color: rgb(232, 232, 232);
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: -2px;
+  color: rgb(247,245,230);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", "Times New Roman", Times, Serif;
+}
+
+.headCont{
+  padding: 0;
+  height: 80px;
+  left: 0;
+  right:0;
+  background-color: rgb(51,58,86);
+  color: rgb(247, 245, 230);
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  border-bottom-color: gray;
+  z-index: 2;
+}
+
+h2, nav{
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -10px;
+  
+}
+
+nav a{
+  color: rgb(247, 245, 230);
+  margin: 10px;
+  font-size: 13px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.bg{
+  position: fixed;
+  z-index:-5;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#mainCont{
+  display:flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  background-color: rgb(247, 245, 230);
+  width: 65%;
+  color: rgb(51,58,86);
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  overflow-x: hidden;
+}
+
+#about{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+#aboutme{
+  margin-top: 0px;
+}
+
+.picCont{
+  padding: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.myPhoto{
+  padding:0;
+  height: 100%;
+  width: 80%;
+  margin: 10%;
+  border-radius: 10px;
+}
+
+.picGrad{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  bottom: 0;
+  background-color: rgba(51, 58, 86, 0.6);
+  border-radius: 10px;
+}
+
+.desCon{
+  display: flex;
+  width: 44%;
+  height: 100%;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 3%;
+  text-align: justify;
+  position: relative;
+}
+
+.opening{
+  font-size: 35px;
+  font-weight: 900;
+  height:10%;
+  margin-bottom: 20px;
+  color: rgb(51,58,86);
+  margin-top: 50px;
+}
+
+.des{
+  height: 80%;
+  text-align: justify;
+  width: 100%;
+  font-size: 15px;
+}
+
+h1{
+  background-color: rgb(51,58,86);
+  color: rgb(247, 245, 230);
+  text-align: center;
+  margin: 20px;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 30px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+#contact h1{
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+#skills{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+table{
+  margin: 5%;
+  width:90%;
+  border-collapse: collapse;
+  border: 0px solid rgb(82, 101, 143);
+}
+
+tr, td, th{
+  border-top: 10px solid rgb(82, 101, 143);
+  border-bottom:10px solid rgb(82, 101, 143);;
+  border-left:0;
+  border-right:0;
+}
+
+#skills th{
+  width:50%;
+}
+
+th{
+  background-color: rgb(82, 101, 143);
+  color: rgb(247, 245, 230);
+  text-align: center;
+}
+ 
+#portfolio tr{
+  text-align: center;
+}
+
+#portfolio{
+  display:flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#portfolio a{
+  text-decoration: none;
+  color: rgb(82, 101, 143);
+}
+
+#portfolio th{
+  width: 33%;
+}
+
+#contact{
+  display: flex;
+  width: 100%;
+  padding:0;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 5%;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.formCont{
+  display: flex;
+  flex-direction: row;
+}
+
+.rightform{
+  width: 50%;
+  padding-left: 5%;
+}
+
+.leftform{
+  width: 50%;
+  padding-right: 5%;
+}
+
+input, textarea{
+  width: 95%;
+  border: 2px solid rgb(51, 58, 86);
+  background-color: rgb(232, 232, 232);
+  color: rgb(82, 101, 143);
+  border-radius: 5px;
+  box-shadow: 3px 3px rgb(82, 101, 143);
+  margin-bottom: 3px;
+  font-family: "Courier New", "Times New Roman", Times, Serif;
+}
+
+#submit{
+  margin-top: 25px;
+  width: 20%;
+  height: 30px;
+  background-color: rgb(82, 101, 143);
+  color: rgb(247, 245, 230);
+  min-width: 30%;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+#submit:active {
+  margin-top: 28px;
+  margin-left: 3px;
+  background-color: rgb(60, 60, 60);
+  color: rgb(250, 250, 240);
+  box-shadow: 0 0;
+  margin-bottom: 3px;
+}
+
+footer{
+  background-color: rgb(82, 101, 143);
+  margin-bottom: 0;
+  padding: 0;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+footer p{
+  text-align: center;
+  margin: auto;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+textarea{
+  height: 70px;
+}
+
+input{
+  height: 20px;
+}
+
+.socialCont{
+  position: absolute;
+  height:35px;
+  width:100px;
+  bottom: 5px;
+  right: 0;
+  padding: 5px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.social img:hover{
+  scale: 2;
+  transition: 0.5s;
+}
+
+.socialCont p{
+  width: 100%;
+  text-align: center;
+  height: 20%;
+  font-size: 10px;
+  margin: 5px;
+}
+
+.social{
+  all: unset;
+  justify-content: space-between;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.social img{
+  all: unset;
+  height: 100%;
+  width: 100%;
+  margin: 0px 10px 10px 5px;
+}
+
+h2{
+  position: static;
+  z-index: 15;
+  background-size: 400%;
+  background: linear-gradient(90deg, blue, violet, red, orange, green, cyan, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-size: 400%;
+  animation: text 10s linear infinite;
+}
+
+@keyframes text{
+  0%{
+    background-position: 0;
+  }
+  
+  50%{
+    background-position: 200%;
+  }
+  
+  100%{
+    background-position: 400%;
+  }
+}
+
+ h1{
+  animation: title1 2s;
+}
+
+table, form, #about{
+  animation: title2 2s;
+}
+
+@keyframes title1{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes title2{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(-10%);
+  }
+}

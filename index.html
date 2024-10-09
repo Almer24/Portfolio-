@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style/style.css"/>
+  <title>My Personal Portfolio</title>
+</head>
+<body>
+  <header class="headCont">
+    <h2>Welcome to my Portfolio</h2>
+    <nav>
+      <a href="#aboutme">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <img src="img/bg.jpeg" class="bg">
+  
+  <main id="mainCont">
+    <h1 id="aboutme">About Me</h1>
+    <section id="about">
+      <div class="picCont">
+        <img class="myPhoto "src="img/image.jpeg">
+        <div class="picGrad"></div>
+      </div>
+      <div class="desCon">
+        <div class="opening">Martinez, Louie H.</div>
+        <div class="des">
+            I am a computer science student from Diaz College. I am currently on my third year and taking the course CS114 (Web Programming). 
+            I aspire to be a competent programmer that have a wide range of expertise inculding web development.
+        </div>
+        <div class="socialCont">
+          <p>Find me at:</p>
+          <div class="social">
+            <a href="https://www.facebook.com/elmer.lumabas24?mibextid=ZbWKwL"><img src="img/fb.png"></a>
+            <a href="https://www.youtube.com/@lumabaselmer7837"><img src="img/yt.png"></a>
+            <a href="https://www.facebook.com/elmer.lumabas24?mibextid=ZbWKwL"><img src="img/x.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills">
+      <h1 class="">Skills</h2>
+      <table border=1>
+        <tr>
+          <th>Technical Skills</th>
+          <th>Personal Skills</th>
+        </tr>
+        <tr>
+          <td rowspan=4>
+            <ul>
+              <li>Microsoft Office</li>
+              <li>Intermediate Java</li>
+              <li>HTML and CSS</li>
+              <li>Basic Javascript</li>
+            </ul>
+          </td>
+          
+          <td rowspan=4>
+            <ol>
+              <li>Problem Solving</li>
+              <li>Hardworking</li>
+              <li>Eager to Learn</li>
+              <li>Work-Oriented</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </section>
+    
+    <section id="portfolio">
+      <h1>Portfolio</h1>
+      <table border=1>
+        <tr>
+          <th class="projNo">Project</th>
+          <th class="projDes">Description</th>
+          <th class="projLink">Link</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>A copy of the old youtube UI using only HTML and CSS</td>
+          <td><a href="https://htmlpreview.github.io/?https://github.com/Almer24/Practice-Website/blob/master/youtube.html" target="_blank">View Project</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>A simple counter with basic Javascript code</td>
+          <td><a href="https://htmlpreview.github.io/?https://github.com/Almer24/Practice-Javascript/blob/master/kdh.html" target="_blank">View Project</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>A tribute page for our national hero</td>
+          <td><a href="https://htmlpreview.github.io/?https://github.com/Almer24/Tribute/blob/master/TributePage.html" target="_blank">View Project</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>A Form registration using only CSS and HTML</td>
+          <td><a href="https://htmlpreview.github.io/?https://github.com/Almer24/Practice-Form/blob/master/SurveyForm.html" target="_blank">View Project</a></td>
+        </tr>
+      </table>
+    </section>
+    
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <p>For inquiry, send me a message here: </p>
+      <form action="/submit form" method="post">
+        <div class="formCont">
+          <div class="leftform">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="rightform">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" row="5" cols="4"></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Send Message" id="submit">
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p> &copy;2024. All rights reseved.</p>
+  </footer>
+ <!--<img src="image.jpeg">-->
+</body>
+</html>
